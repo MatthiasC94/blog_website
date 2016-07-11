@@ -1,15 +1,443 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("post_project.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+  float:left;
+  line-height: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12pt;
+  width: auto;
+  color: #1b1b1b;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 30px;
+  }
+
+h5 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px;
+  }
+
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  width: 45%;
+  float: right;
+  height: 45px;
+  margin: 0px;
+}
+
+li {
+  display: inline;
+  float: right;
+  width: auto;
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  line-height: 18px;
+  padding: 15px 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 10pt;
+}
+
+a {
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border-bottom: 1px solid rgb(237,238,238);
+}
+
+header img {
+  width: 30px;
+  padding: 9px;
+  float: left;
+}
+
+.popup {
+  display: none;
+  position: fixed; top: 0; left: 0; 
+  background: rgba(0,0,0,0.7);
+  max-width: 500px;
+  height: 90%;
+}
+
+.popup-wrapper{
+  text-align: center;
+  padding: 40px;
+}
+
+.popup-wrapper img {
+  width: 60%;
+  height: auto;
+  padding: 10px 0px 30px 0px
+}
+
+.popupvideo {
+  padding: 60px 0px;
+  margin: 0px auto;
+  display: block;
+  width: 572px;
+}
+
+#i-nav {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.video{
+  padding: 100px 0px 70px 0px;
+  margin: 0px auto;
+  display: block;
+  width: 672px;
+  height: 377px;
+  clear:both;
+}
+
+.section{
+  background: rgb(250,250,250);
+  margin: auto;
+}
+
+.article-section{
+  margin: auto;
+}
+
+.video-section{
+  background: rgb(250,250,250);
+  margin: auto;
+}
+
+.description{
+  text-align: center;
+  background: rgb(255,255,255);
+}
+
+.description h1 {
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase; 
+  color: black;
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+
+.service {
+  text-align: center;
+  background: rgb(250,250,250);
+}
+
+.gallery {
+  background: rgb(250,250,250);
+}
+.gallery h2 {
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: auto;
+  padding: 45px 10px;
+  display: block;
+  text-align: center;
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.colcontainer {
+  margin: auto;
+  padding: 60px 50px;
+  display: block;
+  text-align: center;
+  color: #1b1b1b;
+  text-decoration: none;
+  max-width: 1200px;
+}
+
+.col-2{
+  display: inline-block;
+  width: 43%;
+  margin: 40px 0px 0px 0px;
+}
+
+.col-2 p{
+  margin: 0;
+}
+
+.col-3 {
+  width: 300px;
+  padding:40px 40px;
+  margin: auto;
+  display: inline-block;
+}
+
+.text_wrapper {
+  display: inline-block;
+  margin: 15px 0px;
+}
+
+.btn {
+  color: #1b1b1b;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 8px;
+  text-transform: uppercase;
+  border: 1px solid #1b1b1b;
+  display: inline-block;
+  width:110px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.pagination {
+  padding-top: 60px;
+}
+
+.footer{
+  background-color: #1b1b1b; 
+  padding: 20px 50px 0px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+a[href^="tel"]{
+    text-decoration:none;
+}
+
+.footer p {
+  margin: 0px;
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: white;
+}
+.footer a{
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+
+.footer h5 {
+  margin: 40px;
+  color: white;
+  font-weight: 400;
+}
+.footer img{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.footer i{
+  margin: 20px;
+}
+
+#copyright{
+  text-transform: uppercase;
+  font-size: 8pt;
+  margin-top: 80px;
+}
+
+.contact img{
+  margin: 40px;
+}
+
+.portrait img{
+  margin: 40px;
+  width: 50%;
+  height: auto;
+  border: 1px solid #1b1b1b;
+}
+
+.gallery{
+  margin: auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.gallery img{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  margin: 40px 19px 0px 19px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 990px) {
+  .col-3 {
+    width: 60%;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .btn{
+    margin: 0px;
+  }
+  .supporting p{
+    height: 10px;
+  }
+
+  #popup-wrapper{
+  width: 95%;
+}
+
+@media only screen and (max-width: 770px) {
+  .col-2 {
+    width: 60%;
+  }
+
+  .video {
+    margin: 0 auto;
+    display: block;
+    width: 560px;
+    padding: 70px 0px 30px 0px;
+  }
+
+  .popupvideo {
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 420px;
+    height: 236px;
+  }
+
+  #i-nav {
+    display: initial;
+  }
+
+  .video-section{
+    height: 420px;
+  }
+
+  .colcontainer {
+    margin: auto;
+    padding: 60px 5px;
+    display: block;
+    text-align: center;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+  ul{
+    width: 100%;
+    text-align: center;
+    display: none;
+    height: 140px;
+    margin: 0;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  ul li a{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid rgb(237,238,238) 1px;
+    padding: 0;
+    padding: 10px 0px;
+    background: white;
+  }
+
+   ul li a:hover {
+    background: rgb(237,238,238);
+  }
+}  
+
+@media only screen and (max-width: 560px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .video {
+    width: 100%;
+    padding-top: 75px
+  }
+
+  .popupvideo {
+    width: 280px;
+    height: 180px;
+    padding: 50px 0px;
+  }
+
+  .video-section{
+    height: 390px;
+  }
+
+  .text_wrapper {
+    min-height: 70px;
+    display: inline-block;
+
+  }
+
+  .portrait img{
+    width: 80%;
+    height: auto;
+    border: 1px solid #1b1b1b;
+  }
+
+  .col-3 {
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  @media only screen and (max-width: 400px) {
+
+  .video-section{
+    height: 320px;
+  }
