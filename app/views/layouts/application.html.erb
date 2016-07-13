@@ -2,40 +2,54 @@
 <html>
   <head>
   	<title>Matthias Cordes | Your Creative Partner</title>
-  
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="theme-color" content="#ffffff">
-	<meta charset="utf-8"/>
- 
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  	<meta name="theme-color" content="#ffffff">
+  	<meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/90eb5d7563.js"></script>
+    <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>
+      $(document).ready(function(){
+        $('#show').click(function(){
+          $('ul').toggleClass('show');
+        });
+      });
+    </script>
+
   </head>
 
-  <body>
 
-  	<header>
-    <a href="index.html"> <img src="icons/logo.png"></a>
-    <a href="index.html"><h1>Matthias Cordes</h1></a>
-    <nav>
-      <ul>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li> <a><% link_to "Blog", posts_path %>Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <a id="i-nav" href="#"><img src="icons/sidebar.png"></a>
-  </header>
+  <body>
+    <header>
+        <%= link_to( image_tag("logo.png")) %>
+        <h1><%= link_to "Matthias Cordes", root_path, :class => "h1" %></h1>
+        <ul>
+          <li><%= link_to "Portfolio", posts_path, :class => "header" %></li>
+          <li><%= link_to "Articles", posts_path, :class => "header" %></li>
+          <li><%= link_to "Contact", posts_path, :class => "header" %></li>
+        </ul>
+        <div class="button">
+          <a href="#" id="show"><%=image_tag("sidebar.png") %></a>  
+        </div>
+    </header>
 
     <%= yield %>
+
+    <footer class="footer">
+      <h5> Connect </h5>
+      <%= link_to( image_tag("icon.png")) %>
+      <a href="mailto:mail@matthiascordes.com">mail@matthiascordes.com</a>
+      <p> +49 15787371779</p>
+      <a href="http://facebook.com/matthiascordes" target="_blank" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/m_cordes_/" target="_blank" ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      <a href="https://nl.linkedin.com/in/matthiascordes" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <p id="copyright"> &copy 2016 Matthias Cordes</p>  
+    </footer>
   </body>
 </html>

@@ -1,7 +1,14 @@
-<%= @post.title %> <br>
-<%= @post.content %>
 
-<br>
-<br>
-
-<%= link_to "Edit", edit_post_path(@post) %>
+<div class="article">
+	<div class="container">
+      	<div class="headline">
+          	<p class="date"><%= @post.created_at.strftime('%A, %B %d')%></p>
+          	<h2><%= @post.title %></h2>
+      	</div>
+      	<hr>
+      	<div class="content" id="post_show_content">
+      		<%= @post.content %>
+      	</div>
+      	<a onclick="javascript:window.open('http://facebook.com/sharer.php?u= <%= url_for ([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    </div>
+</div>
