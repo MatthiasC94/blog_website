@@ -1,4 +1,6 @@
 @import url("_post_project.css");
+@import url("pygments.css.scss");
+
 
 html, body {
   margin: 0;
@@ -6,7 +8,7 @@ html, body {
   font-family: 'Oxygen', sans-serif;
 }
 
-  h1 {
+ header h1 {
     text-align: left;
     text-transform: uppercase;
     font-weight: 600;
@@ -54,7 +56,7 @@ html, body {
     font-size: 14px;
   }
 
-  li a {
+  header li a {
     display: block;
     line-height: 18px;
     padding: 15px 3px;
@@ -84,7 +86,7 @@ html, body {
     float: left;
   }
 
-ul {
+header ul {
   list-style: none;
   width: 45%;
   float: right;
@@ -93,7 +95,7 @@ ul {
   display: inline-block;
 }
 
-li {
+header li {
   display: inline;
   float: right;
   width: auto;
@@ -320,7 +322,7 @@ a[href^="tel"]{
 
 @media only screen and (max-width: 770px) {
 
-  ul{
+  header ul{
     width: 100%;
     text-align: center;
     display: none;
@@ -328,13 +330,13 @@ a[href^="tel"]{
     margin: 0;
   }
 
-  li {
+  header li {
     width: 100%;
     text-align: center;
     margin: 0px;
   }
 
-  ul li a{
+  header ul li a{
     width: 100%;
     text-align: center;
     border-bottom: solid rgb(237,238,238) 1px;

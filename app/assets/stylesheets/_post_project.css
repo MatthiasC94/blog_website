@@ -35,7 +35,7 @@ padding-top: 150px;
 }
 
 hr{
-	width: 80%;
+	width: 97%;
 	max-width: 700px;
 }
 
@@ -53,7 +53,8 @@ hr{
 	text-align: left;
 	display: inline-block;
 	padding: 30px 5px 10px 5px;
-	max-width: 700px;
+	width: 700px;
+	margin: 0;
 }
 
 .content p {
@@ -110,3 +111,50 @@ hr{
 
 }
 
+.article h1 {
+	font-size: 32pt;
+	text-transform: none;
+	font-weight: 600;
+	width: auto;
+	text-align: center;
+}
+
+.article h2 {
+	font-size: 18pt;
+	font-weight: 600;
+	text-transform: none;
+	width: auto;
+
+}
+
+.article h3 {
+	font-size: 14pt;
+	font-weight: 600;
+	text-transform: none;
+	width: auto;
+
+}
+
+label {
+	padding: 10px;
+	font-size: 14pt;
+}
+
+input{
+	margin: 5px
+}
+
+textarea {
+	margin: 40px;
+	width: 95%;
+	margin: 5px;
+	padding: 0;
+	height: 400px;
+}
+
+#post_title{
+	margin: 40px;
+	width: 95%;
+	margin: 5px;
+	padding: 0;
+}
