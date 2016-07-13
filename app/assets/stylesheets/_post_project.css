@@ -48,6 +48,10 @@ hr{
 	max-width: 700px;
 }
 
+.post hr {
+	margin: 40px 0px;
+}
+
 .headline {
 	padding: 40px 0px 40px 0px;
 	margin: auto;
