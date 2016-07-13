@@ -409,7 +409,7 @@ a[href^="tel"]{
     height: 320px;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 350px) {
 
   .h1{
     display: none;
@@ -604,3 +604,4 @@ textarea {
   margin: 5px;
   padding: 0;
 }
+
