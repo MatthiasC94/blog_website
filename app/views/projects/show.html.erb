@@ -1,0 +1,12 @@
+
+<div class="article">
+	<div class="post-wrapper">
+     	<div class="headline">
+          	<p class="date"><%= @project.created_at.strftime('%A, %B %d')%></p>
+          	<h1><%= @project.title %></h1>
+      	</div>
+      	<hr>
+        <div class="content" id="post_show_content">
+      	    <%= markdown @project.description %>
+    </div>
+</div>
