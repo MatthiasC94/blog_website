@@ -1,6 +1,4 @@
-@import url("_post_project.css");
-@import url("pygments.css.scss");
-
+@import url("post_projects.css");
 
 html, body {
   margin: 0;
@@ -8,101 +6,122 @@ html, body {
   font-family: 'Oxygen', sans-serif;
 }
 
- header h1 {
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12pt;
-    color: #1b1b1b;
-    width: 250px;
-    padding: 13px 0px 13px 013px;
-    letter-spacing: 3px;
-    margin: 0;
-    display: inline-block;
+h1 {
+  float:left;
+  line-height: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12pt;
+  width: auto;
+  color: #1b1b1b;
+}
 
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 30px;
   }
 
-  h2 {
-    font-weight: 300;
-    font-size: 36px;
-    text-transform: uppercase;
-    line-height: 40px;
+h5 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px;
   }
 
-  h3 {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-  }
 
-  h4 {
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 30px;
-    }
+p {
+  font-weight: 300;
+  font-size: 14px;
+}
 
-  h5 {
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 10px;
-    }
-
-
-  p {
-    font-weight: 300;
-    font-size: 14px;
-  }
-
-  header li a {
-    display: block;
-    line-height: 18px;
-    padding: 15px 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1b1b1b;
-    font-size: 10pt;
-    font-weight: 400;
-  }
-
-  a {
-    color: #1b1b1b;
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-  header {
-    width: 100%;
-    height: 45px;
-    background: white;
-    border-bottom: 1px solid rgb(237,238,238);
-  }
-
-  header img {
-    width: 30px;
-    padding: 9px;
-    float: left;
-  }
-
-header ul {
+ul {
   list-style: none;
   width: 45%;
   float: right;
   height: 45px;
   margin: 0px;
-  display: inline-block;
 }
 
-header li {
+li {
   display: inline;
   float: right;
   width: auto;
   margin-right: 20px;
 }
 
-.button {
+li a {
+  display: block;
+  line-height: 18px;
+  padding: 15px 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 10pt;
+}
+
+a {
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border-bottom: 1px solid rgb(237,238,238);
+  position: fixed;
+}
+
+header img {
+  width: 30px;
+  padding: 9px;
+  float: left;
+}
+
+.popup {
+  display: none;
+  position: fixed; top: 0; left: 0; 
+  background: rgba(0,0,0,0.7);
+  max-width: 500px;
+  height: 90%;
+}
+
+.popup-wrapper{
+  text-align: center;
+  padding: 40px;
+}
+
+.popup-wrapper img {
+  width: 60%;
+  height: auto;
+  padding: 10px 0px 30px 0px
+}
+
+.popupvideo {
+  padding: 60px 0px;
+  margin: 0px auto;
+  display: block;
+  width: 572px;
+}
+
+#i-nav {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -112,19 +131,7 @@ header li {
 }
 
 .show{
-  display: none;
-}
-
-.dropdown_button {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  display: none;
-}
-
-.name{
-  width: 300px;
-  display: inline-block;
+  display: block;
 }
 
 .video{
@@ -139,18 +146,10 @@ header li {
 .section{
   background: rgb(250,250,250);
   margin: auto;
-  min-height: 500px;
 }
 
-.article{
+.article-section{
   margin: auto;
-    background: rgb(250,250,250);
-
-}
-
-.aboutme{
-      background: rgb(250,250,250);
-
 }
 
 .video-section{
@@ -161,6 +160,16 @@ header li {
 .description{
   text-align: center;
   background: rgb(255,255,255);
+}
+
+.description h1 {
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase; 
+  color: black;
+  display: inline;
+  width: 100%;
+  text-align: center;
 }
 
 .service {
@@ -230,6 +239,10 @@ header li {
   margin: 10px;
 }
 
+.pagination {
+  padding-top: 60px;
+}
+
 .footer{
   background-color: #1b1b1b; 
   padding: 20px 50px 0px 50px;
@@ -237,49 +250,21 @@ header li {
   text-decoration: none;
   display: block;
 }
-
-.footer img{
-  width: 150px;
-  height: 150px;
-}
-
 a[href^="tel"]{
     text-decoration:none;
 }
-.btn-green {
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  display: inline-block;
-  width:110px;
-  text-decoration: none;
-  margin: 10px;
-
-  background-color: rgb(67,201,80);
-  -moz-border-radius:24px;
-  -webkit-border-radius:24px;
-  border-radius:24px;
-  color:#ffffff;
-  padding:10px 31px;
-  margin: 30px 10px 10px 10px;
-}
-
-.btn-green a{
-  color: white;
-}
 
 .footer p {
-  color: rgb(255,255,255);
   margin: 0px;
   font-size: 14px;
   padding-bottom: 10px;
+  color: white;
 }
 .footer a{
   color: white;
   font-size: 14px;
+  display: inline-block;
   font-weight: 300;
-    text-decoration: underline;
-
 }
 
 
@@ -302,7 +287,6 @@ a[href^="tel"]{
   text-transform: uppercase;
   font-size: 8pt;
   margin-top: 80px;
-  color: white;
 }
 
 .contact img{
@@ -330,7 +314,6 @@ a[href^="tel"]{
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 990px) {
   .col-3 {
     width: 60%;
@@ -352,45 +335,27 @@ a[href^="tel"]{
 }
 
 @media only screen and (max-width: 770px) {
-
-  header ul{
-    width: 100%;
-    text-align: center;
-    display: none;
-    height: 140px;
-    margin: 0;
-  }
-
-  header li {
-    width: 100%;
-    text-align: center;
-    margin: 0px;
-  }
-
-  header ul li a{
-    width: 100%;
-    text-align: center;
-    border-bottom: solid rgb(237,238,238) 1px;
-    padding: 0;
-    padding: 10px 0px;
-    background: white;
-  }
-
-  .button {
-    display: inline-block;
-  }
   .col-2 {
     width: 60%;
   }
 
-  .show{
-    display: block;
-  }
   .video {
     margin: 0 auto;
     display: block;
     width: 560px;
     padding: 70px 0px 30px 0px;
+  }
+
+  .popupvideo {
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 420px;
+    height: 236px;
+  }
+
+  #i-nav {
+    display: initial;
   }
 
   .video-section{
@@ -404,6 +369,29 @@ a[href^="tel"]{
     text-align: center;
     color: #1b1b1b;
     text-decoration: none;
+}
+
+  ul{
+    width: 100%;
+    text-align: center;
+    display: none;
+    height: 140px;
+    margin: 0;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  ul li a{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid rgb(237,238,238) 1px;
+    padding: 0;
+    padding: 10px 0px;
+    background: white;
   }
 
    ul li a:hover {
@@ -412,10 +400,20 @@ a[href^="tel"]{
 }  
 
 @media only screen and (max-width: 560px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
 
   .video {
     width: 100%;
     padding-top: 75px
+  }
+
+  .popupvideo {
+    width: 280px;
+    height: 180px;
+    padding: 50px 0px;
   }
 
   .video-section{
@@ -439,28 +437,8 @@ a[href^="tel"]{
     padding: 30px 0px;
   }
 
-@media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 400px) {
 
   .video-section{
     height: 320px;
   }
-
-  @media only screen and (max-width: 350px) {
-
-  .h1{
-    display: none;
-  }
-
-  header img {
-    text-align: center;
-    margin: 0 auto;
-    float: none;
-    display: block;
-  }
-
-}
-
-
-
-
-
