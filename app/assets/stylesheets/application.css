@@ -139,11 +139,17 @@ header li {
 .section{
   background: rgb(250,250,250);
   margin: auto;
+  min-height: 500px;
 }
 
 .article{
   margin: auto;
     background: rgb(250,250,250);
+
+}
+
+.aboutme{
+      background: rgb(250,250,250);
 
 }
 
@@ -272,6 +278,8 @@ a[href^="tel"]{
   color: white;
   font-size: 14px;
   font-weight: 300;
+    text-decoration: underline;
+
 }
 
 

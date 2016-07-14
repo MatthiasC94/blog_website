@@ -93,6 +93,10 @@ hr{
 	padding: 5px 10px;
 }
 
+.pagination a {
+	padding: 10px;
+}
+
 .pagination:after{
 	clear: both;
 	padding: .75em 5px;
