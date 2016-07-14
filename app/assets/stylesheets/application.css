@@ -19,7 +19,6 @@ html, body {
     letter-spacing: 3px;
     margin: 0;
     display: inline-block;
-
   }
 
   h2 {
@@ -112,7 +111,7 @@ header li {
 }
 
 .show{
-  display: none;
+  display: block;
 }
 
 .dropdown_button {
@@ -383,14 +382,15 @@ a[href^="tel"]{
     width: 60%;
   }
 
-  .show{
-    display: block;
-  }
   .video {
     margin: 0 auto;
     display: block;
     width: 560px;
     padding: 70px 0px 30px 0px;
+  }
+
+  .dropdown_button {
+    display: inline-block;
   }
 
   .video-section{

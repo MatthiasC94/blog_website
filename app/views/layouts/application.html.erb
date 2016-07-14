@@ -32,10 +32,12 @@
           <li><%= link_to 'Contact', contact_index_path, :class => "header" %></li>
           <li><%= link_to "Articles", posts_path, :class => "header" %></li>
           <li><%= link_to "Portfolio", projects_path, :class => "header" %></li>
+        </ul>
         <div class="button">
-          <a href="#" id="show"> <%=image_tag("sidebar.png") %></a>  
+          <a href="#" id="show"><%=image_tag("sidebar.png") %></a>  
         </div>
     </header>
+
 
     <%= yield %>
 
