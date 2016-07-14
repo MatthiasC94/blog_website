@@ -233,17 +233,40 @@ header li {
 }
 
 .footer img{
+  width: 150px;
+  height: 150px;
 }
 
 a[href^="tel"]{
     text-decoration:none;
 }
+.btn-green {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  width:110px;
+  text-decoration: none;
+  margin: 10px;
+
+  background-color: rgb(67,201,80);
+  -moz-border-radius:24px;
+  -webkit-border-radius:24px;
+  border-radius:24px;
+  color:#ffffff;
+  padding:10px 31px;
+  margin: 30px 10px 10px 10px;
+}
+
+.btn-green a{
+  color: white;
+}
 
 .footer p {
+  color: rgb(255,255,255);
   margin: 0px;
   font-size: 14px;
   padding-bottom: 10px;
-  color: white;
 }
 .footer a{
   color: white;
@@ -271,6 +294,7 @@ a[href^="tel"]{
   text-transform: uppercase;
   font-size: 8pt;
   margin-top: 80px;
+  color: white;
 }
 
 .contact img{
