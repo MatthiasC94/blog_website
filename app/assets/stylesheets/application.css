@@ -329,6 +329,270 @@ a[href^="tel"]{
 }
 
 
+pre{
+  background-color: #eee;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: none;
+white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+}
+code{
+  background-color: #eee;
+  padding: 1px 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; 
+}
+
+.hll { background-color: #ffffcc }
+.c { color: #888888 } /* Comment */
+.err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.k { color: #008800; font-weight: bold } /* Keyword */
+.cm { color: #888888 } /* Comment.Multiline */
+.cp { color: #cc0000; font-weight: bold } /* Comment.Preproc */
+.c1 { color: #888888 } /* Comment.Single */
+.cs { color: #cc0000; font-weight: bold; background-color: #fff0f0 } /* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #303030 } /* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #606060 } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008800 } /* Keyword.Pseudo */
+.kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #888888; font-weight: bold } /* Keyword.Type */
+.m { color: #0000DD; font-weight: bold } /* Literal.Number */
+.s { color: #dd2200; background-color: #fff0f0 } /* Literal.String */
+.na { color: #336699 } /* Name.Attribute */
+.nb { color: #003388 } /* Name.Builtin */
+.nc { color: #bb0066; font-weight: bold } /* Name.Class */
+.no { color: #003366; font-weight: bold } /* Name.Constant */
+.nd { color: #555555 } /* Name.Decorator */
+.ne { color: #bb0066; font-weight: bold } /* Name.Exception */
+.nf { color: #0066bb; font-weight: bold } /* Name.Function */
+.nl { color: #336699; font-style: italic } /* Name.Label */
+.nn { color: #bb0066; font-weight: bold } /* Name.Namespace */
+.py { color: #336699; font-weight: bold } /* Name.Property */
+.nt { color: #bb0066; font-weight: bold } /* Name.Tag */
+.nv { color: #336699 } /* Name.Variable */
+.ow { color: #008800 } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #0000DD; font-weight: bold } /* Literal.Number.Float */
+.mh { color: #0000DD; font-weight: bold } /* Literal.Number.Hex */
+.mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.mo { color: #0000DD; font-weight: bold } /* Literal.Number.Oct */
+.sb { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Backtick */
+.sc { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Char */
+.sd { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Doc */
+.s2 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Double */
+.se { color: #0044dd; background-color: #fff0f0 } /* Literal.String.Escape */
+.sh { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Heredoc */
+.si { color: #3333bb; background-color: #fff0f0 } /* Literal.String.Interpol */
+.sx { color: #22bb22; background-color: #f0fff0 } /* Literal.String.Other */
+.sr { color: #008800; background-color: #fff0ff } /* Literal.String.Regex */
+.s1 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Single */
+.ss { color: #aa6600; background-color: #fff0f0 } /* Literal.String.Symbol */
+.bp { color: #003388 } /* Name.Builtin.Pseudo */
+.vc { color: #336699 } /* Name.Variable.Class */
+.vg { color: #dd7700 } /* Name.Variable.Global */
+.vi { color: #3333bb } /* Name.Variable.Instance */
+.il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+
+.post {
+  padding: 0px;
+}
+
+.post h2{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.posts_wrapper{
+  padding: 80px 0px;
+}
+
+.post-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 45px 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.post a:hover { 
+    color: grey;
+}
+
+.date {
+  font-size: 0.8em;
+  color: #595959;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+
+padding-top: 150px;
+}
+
+hr{
+  max-width: 700px;
+  width: 30%;
+}
+
+.post hr {
+  margin: 40px 0px;
+  width: 100%
+
+}
+
+.headline {
+  padding: 40px 0px 40px 0px;
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.headline h2{
+  margin: 10px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.content{
+  text-align: left;
+  padding: 0;
+  padding-top: 40px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.content p {
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(51,51,51);
+}
+
+// - - - - - Pagination 
+
+.pagination:before, .pagination:after {
+  content " ";
+  display: table;
+};
+
+.page a {
+  padding: 5px 10px;
+}
+
+.pagination a {
+  padding: 10px;
+}
+
+.pagination:after{
+  clear: both;
+  padding: .75em 5px;
+}
+
+.pagination a:hover, .previous_page:hover, .current:hover, .next_page:hover {
+  background: #e6e6e6;
+  color: grey;
+}
+
+.current{
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+
+.disabled {
+  color: #C0C0C0;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.disabled:hover {
+  color: #C0C0C0;
+  background: none;
+
+}
+
+
+.article h1 {
+  font-size: 32pt;
+  text-transform: none;
+  font-weight: 600;
+  width: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.article h2 {
+  font-size: 18pt;
+  font-weight: 600;
+  text-transform: none;
+  width: auto;
+
+
+}
+
+.article h3 {
+  font-size: 14pt;
+  font-weight: 600;
+  text-transform: none;
+  width: auto;
+
+}
+
+label {
+  padding: 10px;
+  font-size: 14pt;
+}
+
+input{
+  margin: 5px
+}
+
+textarea {
+  margin: 40px;
+  width: 95%;
+  margin: 5px;
+  padding: 0;
+  height: 400px;
+}
+
+#post_title{
+  margin: 40px;
+  width: 95%;
+  margin: 5px;
+  padding: 0;
+}
+
+
 @media only screen and (max-width: 990px) {
   .col-3 {
     width: 60%;
