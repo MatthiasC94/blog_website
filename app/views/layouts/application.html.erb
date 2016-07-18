@@ -38,6 +38,11 @@
         </div>
     </header>
 
+    <%if notice %>
+      <p class="notice"> <%= notice %><p>
+    <% elsif alert %>
+      <p class="alter"> <%= alert %><p>
+    <% end %>
 
     <%= yield %>
 
