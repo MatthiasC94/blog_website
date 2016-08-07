@@ -14,7 +14,7 @@ module ApplicationHelper
 	      if link.include?("https://www.youtube.com")
 	        youtube_link(link)
 
-	       elsif link.include?("https://www.facebook.com/")
+	       elsif link.include?("https://www.facebook.com")
 	        facebook_link(link)
 
 	      else
@@ -25,7 +25,7 @@ module ApplicationHelper
 	    def youtube_link(link)
 	      parameters_start = link.index('=')
 	      video_id = link[parameters_start + 1..-1]
-	      "<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/#{video_id}?autoplay=0\" allowfullscreen></iframe>"
+	      "<iframe width=\"315px\" height=\"516px\" src=\"https://www.youtube.com/embed/#{video_id}?autoplay=0\" allowfullscreen></iframe>"
 	    end
 
 	    def facebook_link (link)
@@ -40,7 +40,7 @@ module ApplicationHelper
 
 	end
 	def markdown(content)
-		renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
+		renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: false)
 		options = {
 			autolink: true,
 			no_instra_emphasis: true,

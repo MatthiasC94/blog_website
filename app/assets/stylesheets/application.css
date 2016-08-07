@@ -49,6 +49,7 @@ h2 {
   p {
     font-weight: 300;
     font-size: 14px;
+    padding: 0px 15px;
   }
 
   header li a {
@@ -97,6 +98,23 @@ header li {
   margin-right: 20px;
   }
 
+.content img{
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.content iframe{
+    position: relative;
+    border: none;
+    margin: 0px auto;
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
 .button {
   width: 30px;
   height: 30px;
@@ -139,13 +157,12 @@ header li {
 
 .article{
   margin: auto;
-    background: rgb(250,250,250);
+  background: rgb(250,250,250);
 
 }
 
 .aboutme{
       background: rgb(250,250,250);
-
 }
 
 .video-section{
@@ -425,8 +442,8 @@ code{
 
 .post-wrapper {
   max-width: 700px;
-  margin: auto;
-  padding: 45px 10px;
+  margin: auto 0px;
+  padding: 45px 0px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -478,8 +495,8 @@ hr{
 
 .content{
   text-align: left;
-  padding: 0;
-  padding-top: 40px;
+  padding: 0px;
+  padding: 40px 0px;
   max-width: 700px;
   margin: auto;
 }
@@ -544,6 +561,8 @@ hr{
   width: auto;
   text-align: center;
   margin: auto;
+    padding: 0px 15px;
+
 }
 
 .article h2 {
@@ -551,6 +570,8 @@ hr{
   font-weight: 600;
   text-transform: none;
   width: auto;
+  padding: 0px 15px;
+
 
 
 }
@@ -560,7 +581,14 @@ hr{
   font-weight: 600;
   text-transform: none;
   width: auto;
+    padding: 0px 15px;
 
+
+}
+
+.content h1 {
+  text-align: left;
+  font-size: 32px;
 }
 
 label {
@@ -675,6 +703,10 @@ textarea {
 
   }
 
+  .content iframe{
+    height: 200px;
+}
+
   .text_wrapper {
     min-height: 70px;
     display: inline-block;
@@ -685,6 +717,11 @@ textarea {
     width: 80%;
     height: auto;
   }
+
+  .content img{
+    width: 100%;
+    height: 100%;
+}
 
   .col-3 {
     width: 100%;
