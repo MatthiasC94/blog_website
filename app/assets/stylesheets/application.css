@@ -113,6 +113,7 @@ header li {
     height: 400px;
     overflow: hidden;
     width: 100%;
+    padding: 30px 0px;
 }
 
 .button {
