@@ -442,12 +442,11 @@ code{
 
 .post-wrapper {
   max-width: 700px;
-  margin: 0px auto;
+  margin: auto 0px;
   padding: 45px 0px;
   display: block;
   text-align: center;
   text-decoration: none;
-
 }
 
 .post a {
