@@ -8,5 +8,23 @@
       	<hr>
         <div class="content" id="post_show_content">
       	    <%= markdown @project.description %>
+        </div>
+
+	    <br><br>
+	    <hr><br>
+
+	<% if usermodel_signed_in? %>
+		<div id="admin_links">
+			            <div class="btn">
+
+			<%= link_to "Edit", edit_project_path(@project) %>
+		</div>
+			            <div class="btn">
+
+			<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %>
+					</div>
+
+		</div>
+	<% end %>
     </div>
 </div>
