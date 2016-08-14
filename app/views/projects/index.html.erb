@@ -1,18 +1,28 @@
 <div class="section">
-    <div class="post-wrapper"> 
-      	<h2> Stuff, I've created </h2>
+  <div class="post-wrapper"> 
+    <h2> Stuff, I've created </h2><hr>
+    <div class= "colcontainer" >
+      <% @projects.each do |project| %>
+      <div  class= "project-col-3">
 
-      	<div class= "post" >
-                      <hr>
+        <a href="artcile_show.html">
+        <%= link_to( image_tag(project.image.url(:thumb)), project) %>
+        </a>
 
-      		<% @projects.each do |project| %>
-	      		<p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
-	          	<h2><a href="artcile_show.html"> <%= link_to project.title, project %></a></h2>
-	          	<hr>
-      		<% end %>
-      	</div>
-                <div class="pagination">
-           <%= will_paginate @posts %>
-        </div>
-  	</div>
+	      <h2><a href="artcile_show.html">
+          <%= link_to project.title, project %> 
+        </a></h2>
+
+      </div>
+      <% end %>
+      <hr>
+    </div>
+
+    <div class="pagination">
+      <%= will_paginate @posts %>
+    </div>
+
+  </div>
 </div>
+
+

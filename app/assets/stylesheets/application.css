@@ -101,8 +101,8 @@ header li {
 .content img{
   width: 60%;
   height: 60%;
-  margin: 0 auto;
   display: block;
+  margin: 15px auto 40px auto;
 }
 
 .content iframe{
@@ -425,16 +425,38 @@ code{
   .vi { color: #3333bb } /* Name.Variable.Instance */
   .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
-.post {
-  padding: 0px;
+#post {
+  padding-top: 10px;
 }
 
-.post h2{
+.project-col-3 h2{
   margin: 0;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 700;
   text-transform: none;
+}
+
+.project-col-3 {  
+  width: 300px;
+  padding:0px 25px 50px 25px;
+  margin: auto;
+  display: inline-block;
+}
+
+.projects h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.post h2 {
+  font-weight: 700;
+  margin-top: 10px;
+    margin-bottom: 2px;
+
 }
 
 .posts_wrapper{
@@ -442,9 +464,9 @@ code{
 }
 
 .post-wrapper {
-  max-width: 700px;
+  max-width: 1300px;
   margin: 0px auto;
-  padding: 45px 0px;
+  padding: 45px 0px 67px 0px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -453,6 +475,7 @@ code{
 
 .post a {
   text-decoration: none;
+  text-transform: none;
 }
 
 .post a:hover { 
@@ -466,6 +489,10 @@ code{
   padding: 0;
 }
 
+#disqus_thread {
+  padding: 0px 5px;
+}
+
 .form {
 
 padding-top: 150px;
@@ -473,10 +500,10 @@ padding-top: 150px;
 
 hr{
   max-width: 700px;
-  width: 30%;
+  width: 98%;
 }
 
-.post hr {
+.post-wrapper hr {
   margin: 30px auto;
   width: 98%;
   display: block;
@@ -510,14 +537,22 @@ hr{
   margin: auto;
 }
 
+.disqus-content {
+    text-align: left;
+  padding: 0px;
+  padding: 0px;
+  max-width: 700px;
+  margin: auto;
+}
+
 .content p {
   line-height: 30px;
   font-size: 17px;
-  font-weight: 300;
   color: rgb(51,51,51);
 }
 
 // - - - - - Pagination 
+
 
 .pagination:before, .pagination:after {
   content " ";
@@ -645,6 +680,11 @@ textarea {
   width: 95%;
 }
 
+.colcontainer {  
+  padding: 0px;
+  padding-top: 60px;
+}
+
 @media only screen and (max-width: 770px) {
 
   header ul{
@@ -712,6 +752,11 @@ textarea {
 
   }
 
+  .project-col-3 img {  
+  width: 100%;
+}
+
+
   .content iframe{
     height: 200px;
 }
@@ -727,10 +772,6 @@ textarea {
     height: auto;
   }
 
-  .content img{
-    width: 100%;
-    height: 100%;
-}
 
   .col-3 {
     width: 100%;
@@ -742,6 +783,11 @@ textarea {
     .video {
     height: 250px;
   }
+
+    .content img{
+    width: 100%;
+    height: 100%;
+}
 
   @media only screen and (max-width: 350px) {
 

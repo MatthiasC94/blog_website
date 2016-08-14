@@ -1,21 +1,21 @@
 <div class="section">
-    <div class="post-wrapper"> 
-      	<h2> Stuff, I've written </h2>
+  <div class="post-wrapper"> 
 
-      	<div class= "post" >
-                      <hr>
-
-      		<% @posts.each do |post| %>
-	      		<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-	          	<h2><a href="artcile_show.html"> <%= link_to post.title, post %></a></h2>
-	          	<hr>
-      		<% end %>
-      	</div>
+    <h2> Stuff, I've written </h2>
 
 
-        <div class="pagination">
-           <%= will_paginate @posts %>
-      	</div>
-  	</div>
+    <div class= "post" >
+      <hr>
+      <% @posts.each do |post| %>
+	      <h2><a href="artcile_show.html"> <%= link_to post.title, post %></a></h2>
+                <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+
+	        <hr>
+      <% end %>
+  </div>
+
+      <%= will_paginate @posts %>
+
+  </div>
 </div>
 

@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 
 
 	def index 
-		@projects = Project.all.order("created_at desc").paginate(:page => params[:page], :per_page => 5)
+		@projects = Project.all.order("created_at desc").paginate(:page => params[:page], :per_page => 12)
 	end
 
 	def new
@@ -50,7 +50,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def project_params
-		params.require(:project).permit(:title, :description, :slug)
+		params.require(:project).permit(:title, :description, :slug, :image)
 	end
 end
 

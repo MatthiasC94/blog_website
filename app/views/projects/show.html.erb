@@ -7,6 +7,8 @@
       	</div>
       	<hr>
         <div class="content" id="post_show_content">
+        	<%= image_tag @project.image(:large) %>
+
       	    <%= markdown @project.description %>
         </div>
 
