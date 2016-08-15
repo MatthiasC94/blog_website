@@ -200,7 +200,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk
+  aws-sdk (~> 2.5, >= 2.5.3)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.2)
