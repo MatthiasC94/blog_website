@@ -16,6 +16,7 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1.0'
 gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug', platform: :mri

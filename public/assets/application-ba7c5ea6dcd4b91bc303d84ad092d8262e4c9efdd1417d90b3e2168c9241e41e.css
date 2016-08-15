@@ -435,17 +435,13 @@ code{
   font-size: 1em;
   font-weight: 700;
   text-transform: none;
-    line-height: 20px;
-
 }
 
 .project-col-3 {  
   width: 300px;
-  min-height: 295px;
   padding:0px 25px 50px 25px;
   margin: auto;
   display: inline-block;
-  text-align: top;
 }
 
 .projects h2 {
