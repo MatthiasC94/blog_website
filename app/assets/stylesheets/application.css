@@ -756,11 +756,6 @@ textarea {
 
   }
 
-  .project-col-3 img {  
-  width: 100%;
-
-}
-
   .content iframe{
     height: 200px;
 }
@@ -779,30 +774,28 @@ textarea {
 
   .col-3 {
     width: 100%;
-    padding: 30px 0px;
+    padding: 0px 0px 50px 0px;
   }
 
-    @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 430px) {
 
-    .video {
+  .video {
     height: 250px;
   }
 
-    .project-col-3 {  
-  width: 100%;
-  margin: 0px;
-  padding: 20px 0px;
-  padding-bottom: 50px;
-}
+  .project-col-3 {  
+    width: 100%;
+    padding: 0px 0px;
+  }
 
-.colcontainer{
-  padding: 20px 0px;
-}
+  .colcontainer{
+    padding: 60px 0px;
+  }
 
-    .content img{
+  .content img{
     width: 100%;
     height: 100%;
-}
+  }
 
   @media only screen and (max-width: 350px) {
 
