@@ -40,7 +40,7 @@ h2 {
 
   h5 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     margin: 10px;
     }
@@ -232,12 +232,12 @@ header li {
 .btn {
   color: #1b1b1b;
   font-weight: 700;
-  font-size: 14px;
-  padding: 10px 16px;
+  font-size: 12px;
+  padding: 8px 8px;
   text-transform: uppercase;
   border: 1px solid #1b1b1b;
   display: inline-block;
-  width:150px;
+  width:110px;
   text-decoration: none;
   margin: 10px;
 }
@@ -442,7 +442,7 @@ code{
 .project-col-3 {  
   width: 300px;
   min-height: 295px;
-  padding: 0px 25px 2px 25px;
+  padding:0px 25px 50px 25px;
   margin: auto;
   display: inline-block;
   text-align: top;
@@ -769,7 +769,6 @@ textarea {
   .portrait img{
     width: 80%;
     height: auto;
-    padding: 0px;
   }
 
 
