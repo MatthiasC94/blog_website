@@ -3,6 +3,7 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
+
   config.serve_static_assets = true
 
   # Eager load code on boot. This eager loads most of Rails and
@@ -96,5 +97,6 @@ config.paperclip_defaults = {
     secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
     s3_region: ENV.fetch('AWS_REGION'),
   }
+}
 
 end
