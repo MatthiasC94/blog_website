@@ -142,7 +142,7 @@ header li {
 }
 
 .video{
-  padding: 100px 0px 100px 0px;
+  padding: 75px 0px;
   margin: 0px auto;
   display: block;
   width: 672px;
@@ -306,7 +306,7 @@ a[href^="tel"]{
 }
 
 .footer i{
-  margin: 20px;
+  margin: 10px 10px;
 }
 
 #copyright{
@@ -726,7 +726,7 @@ textarea {
     margin: 0 auto;
     display: block;
     width: 560px;
-    padding: 70px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
   }
 
   .dropdown_button {
