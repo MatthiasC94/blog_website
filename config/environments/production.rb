@@ -98,7 +98,7 @@ config.paperclip_defaults = {
   }
 }
 
-config.action_mailer.default_url_options = { host: 'https://pacific-forest-9589.herokuapp.com' }
+config.action_mailer.default_url_options = { host: 'https://shrouded-castle-33621.herokuapp.com/' }
 config.action_mailer.delivery_method = :smtp
 
 ActionMailer::Base.smtp_settings = {
