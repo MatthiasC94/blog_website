@@ -4,6 +4,10 @@ html, body {
   font-family: 'Oxygen', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 header h1 {
   text-align: left;
   text-transform: uppercase;
@@ -125,6 +129,21 @@ header li {
   display: none;
 }
 
+.thanks{
+  min-height: 500px;
+}
+
+.sendbutton{
+  background-color: rgb(67,201,80);
+  color:#ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+cursor: pointer;
+  background-color: rgb(67,201,80);
+}
+
 .show{
   display: block;
 }
@@ -139,6 +158,12 @@ header li {
 .name{
   width: 300px;
   display: inline-block;
+}
+
+.new_contact{
+  text-align: left;
+  max-width: 650px;    
+  margin: auto;
 }
 
 .video{
@@ -321,8 +346,9 @@ a[href^="tel"]{
 }
 
 .portrait img{
-  margin: 40px 0px;
-  width: 50%;
+  margin: 20px 0px;
+  width: 90%;
+  max-width: 350px;
   height: auto;
   border: 1px solid rgb(237,238,238);
 }
@@ -640,20 +666,29 @@ hr{
 }
 
 label {
-  padding: 10px;
-  font-size: 14pt;
+  padding: 0px 5px;
+  font-size: 10pt;
 }
 
 input{
-  margin: 5px
+  width: 99.5%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 textarea {
-  margin: 40px;
-  width: 95%;
-  margin: 5px;
-  padding: 0;
-  height: 400px;
+  resize: none;
+  width: 99.5%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 #post_title{
@@ -764,12 +799,6 @@ textarea {
     min-height: 70px;
     display: inline-block;
 
-  }
-
-  .portrait img{
-    width: 80%;
-    height: auto;
-    padding: 0px;
   }
 
 
