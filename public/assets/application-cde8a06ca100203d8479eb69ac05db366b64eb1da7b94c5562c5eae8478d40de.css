@@ -16,8 +16,9 @@ header h1 {
   color: #1b1b1b;
   width: 250px;
   margin: 0;
-  padding: 10px 0px 13px 13px;
+  
   display: inline-block;
+  padding: 10px 0px 13px 13px;
 }
 
 h2 {
