@@ -24,7 +24,7 @@ h2 {
   font-weight: 300;
   font-size: 36px;
   text-transform: uppercase;
-  line-height: 0px;
+  line-height: 40px;
   }
 
   h3 {
@@ -77,13 +77,6 @@ h2 {
     height: 45px;
     background: white;
     border-bottom: 1px solid rgb(237,238,238);
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .headercontainer  {
-    max-width: 900px;
-    margin: auto;
   }
 
   header img {
@@ -173,7 +166,7 @@ cursor: pointer;
 }
 
 .video{
-  padding: 35px 0px;
+  padding: 75px 0px;
   margin: 0px auto;
   display: block;
   width: 672px;
@@ -219,7 +212,7 @@ cursor: pointer;
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1040px;
   margin: auto;
   padding: 45px 10px;
   display: block;
@@ -491,7 +484,7 @@ code{
 .post h2 {
   font-weight: 700;
   margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
 
 }
 
@@ -774,7 +767,6 @@ textarea {
     margin: 0 auto;
     display: block;
     width: 560px;
-    height: 300px;
     padding: 50px 0px 0px 0px;
   }
 

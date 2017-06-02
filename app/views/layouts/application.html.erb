@@ -31,6 +31,8 @@
 
   <body>
     <header>
+          <div class="headercontainer">
+
         <%= link_to( image_tag("logo.png"), root_path) %>
         <h1><%= link_to "Matthias Cordes", root_path, :class => "h1" %></h1>
         <ul>
@@ -41,6 +43,8 @@
         <div class="button">
           <a href="#" id="show"><%=image_tag("sidebar.png") %></a>  
         </div>
+                </div>
+
     </header>
 
     <%if notice %>
