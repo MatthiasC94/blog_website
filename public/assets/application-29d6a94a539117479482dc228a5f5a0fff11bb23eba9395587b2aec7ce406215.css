@@ -80,7 +80,7 @@ h2 {
   }
 
   .headercontainer  {
-    max-width: 950px;
+    max-width: 900px;
     margin: auto;
   }
 
@@ -228,7 +228,7 @@ cursor: pointer;
 
 .colcontainer {
   margin: auto;
-  padding: 60px 0px;
+  padding: 60px 50px;
   display: block;
   text-align: center;
   color: #1b1b1b;
@@ -470,7 +470,7 @@ code{
 }
 
 .project-col-3 {  
-  width: 264px;
+  width: 300px;
   min-height: 295px;
   padding: 0px 25px 2px 25px;
   margin: auto;
@@ -498,7 +498,7 @@ code{
 }
 
 .post-wrapper {
-  max-width: 950px;
+  max-width: 1300px;
   margin: 0px auto;
   padding: 45px 0px 67px 0px;
   display: block;
@@ -532,14 +532,16 @@ code{
 padding-top: 150px;
 }
 
+hr{
+  max-width: 700px;
+  width: 98%;
+}
 
 .post-wrapper hr {
-  margin: 10px 0px;
+  margin: 30px auto;
+  width: 98%;
   display: block;
-  margin: auto;
   text-align: center;
-  max-width: 950px;
-  width: 90%;
 
 }
 
@@ -589,7 +591,7 @@ padding-top: 150px;
 .pagination:before, .pagination:after {
   content " ";
   display: table;
-}
+};
 
 .page a {
   padding: 5px 10px;
@@ -829,7 +831,7 @@ textarea {
   }
 
   .colcontainer{
-    padding: 20px 0px;
+    padding: 60px 0px;
   }
 
   .content img{
